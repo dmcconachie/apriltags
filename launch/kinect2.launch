@@ -12,8 +12,8 @@
     <param name="~display_type" value="CUBE" />
     <param name="~marker_thickness" value="0.02" />
 
-    <remap from="~image" to="/kinect2/hd/image_color_rect"/>
-    <remap from="~camera_info" to="/kinect2/hd/camera_info"/>
+    <remap from="~image" to="/kinect2_victor_head/hd/image_color_rect"/>
+    <remap from="~camera_info" to="/kinect2_victor_head/hd/camera_info"/>
     <remap from="~marker_array" to="/apriltags/marker_array"/>
     <remap from="~detections" to="/apriltags/detections"/>
 

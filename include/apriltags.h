@@ -1,3 +1,32 @@
+#include <ros/ros.h>
+#include <ros/forwards.h>
+#include <ros/single_subscriber_publisher.h>
+#include <sensor_msgs/Image.h>
+#include <image_transport/image_transport.h>
+#include <visualization_msgs/Marker.h>
+#include <opencv/cv.h>
+#include <opencv2/highgui.hpp>
+#include <opencv2/calib3d.hpp>
+#include <cv_bridge/cv_bridge.h>
+
+#include <apriltagscpp/TagDetector.h>
+#include <apriltagscpp/TagDetection.h>
+#include <apriltagscpp/TagFamily.h>
+
+#include <Eigen/Core>
+#include <Eigen/Geometry>
+
+#include <visualization_msgs/MarkerArray.h>
+#include "yaml-cpp/yaml.h"
+#include <sstream>
+#include <fstream>
+
+#include <boost/unordered_set.hpp>
+#include <boost/unordered_map.hpp>
+#include <boost/make_shared.hpp>
+
+#include "apriltags/AprilTagDetections.h"
+
 const double SMALL_TAG_SIZE = 0.0358968;
 const double MED_TAG_SIZE = 0.06096;
 const double PAGE_TAG_SIZE = 0.165;

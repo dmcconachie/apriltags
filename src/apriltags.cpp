@@ -27,36 +27,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 *************************************************************************/
-#include <ros/ros.h>
-#include <ros/forwards.h>
-#include <ros/single_subscriber_publisher.h>
-#include <sensor_msgs/Image.h>
-#include <image_transport/image_transport.h>
-#include <visualization_msgs/Marker.h>
-#include <opencv/cv.h>
-#include <opencv2/highgui.hpp>
-#include <opencv2/calib3d.hpp>
-#include <cv_bridge/cv_bridge.h>
-
-#include <apriltagscpp/TagDetector.h>
-#include <apriltagscpp/TagDetection.h>
-#include <apriltagscpp/TagFamily.h>
-
-#include <Eigen/Core>
-#include <Eigen/Geometry>
-
-#include <visualization_msgs/MarkerArray.h>
-#include "yaml-cpp/yaml.h"
-#include <sstream>
-#include <fstream>
-
-#include <boost/unordered_set.hpp>
-#include <boost/unordered_map.hpp>
-#include <boost/make_shared.hpp>
-
 #include "apriltags.h"
-#include "apriltags/AprilTagDetections.h"
-
 
 using namespace std;
 
