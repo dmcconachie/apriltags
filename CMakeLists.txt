@@ -14,7 +14,7 @@ set(CATKIN_PACKAGES
 find_package(catkin REQUIRED COMPONENTS ${CATKIN_PACKAGES} message_generation)
 
 find_package(cmake_modules REQUIRED)
-find_package(OpenCV 3.2 EXACT REQUIRED)
+find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 set(Eigen3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
 
